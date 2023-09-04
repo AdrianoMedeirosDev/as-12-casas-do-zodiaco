@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    height: auto;
+}
+
+header{
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+header p{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+header.rolagem {
+    background-color: black;
+    padding: 5px;
+}
+
+header.rolagem p, header.rolagem i{
+    color: rgb(255, 255, 255);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.flex p{
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    color: blue;
+}
+
+img {
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+button {
+    padding: 15px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 10vw;
+}
+
+input {
+    padding: 15px;
+    background-color: rgb(252, 252, 252);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 15px;
+    width: 15vw;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+.imagemInicial {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/signos.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.imagemInicial:hover {
+    background-color: rosybrown;
+    transition: 1s;
+}
+
+
+.tituloSigno h1{
+    padding-top: 30px;
+    font-size: 42px;
+    color: blue;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container-descricao {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+#text {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: justify;
+    line-height: 1.5;
+    padding-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-decoration: none;
+}
+
+h2::selection {
+    background-color: blue;
+    color: white;
+}
+
+h2::first-letter {
+    font-size: 2em;
+    color: rgb(100, 148, 237);
+    font-weight: 800;
+    line-height: 1rem;
+}
+
