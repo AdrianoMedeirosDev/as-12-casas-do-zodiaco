@@ -11,6 +11,10 @@ html {
     height: auto;
 }
 
+body {
+    height: auto;
+}
+
 header{
     width: 100%;
     padding: 20px;
@@ -28,8 +32,9 @@ header p{
 }
 
 header.rolagem {
-    background-color: black;
-    padding: 5px;
+    background: black;
+    padding: 20px;
+    transition: 1s;
 }
 
 header.rolagem p, header.rolagem i{
@@ -48,7 +53,7 @@ header.rolagem p, header.rolagem i{
     color: blue;
 }
 
-img {
+.imagemInicial img {
     height: 100vh;
     width: 100%;
     background-position: center;
@@ -106,25 +111,22 @@ button:hover {
 .tituloSigno h1{
     padding-top: 30px;
     font-size: 42px;
-    color: blue;
+    color: white;
     text-align: center;
     font-family: 'Oswald', sans-serif;
 }
 
-.container-descricao {
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-}
-
 #text {
-    font-family: 'Montserrat', sans-serif;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
     line-height: 1.5;
     text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 30px;
 }
 
 h2 {
@@ -148,3 +150,14 @@ h2::first-letter {
     line-height: 1rem;
 }
 
+.container-descricao {
+    height: auto;
+    width: 100%;
+    background-image: url(../img/fundo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
